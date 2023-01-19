@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ComponentsModule } from '../components/components.module';
+import { FormsModule } from '@angular/forms';
+import { PostComponent } from './post/post.component';
 
 
 
@@ -11,16 +13,19 @@ import { ComponentsModule } from '../components/components.module';
   declarations: [
     HomeComponent,
     LoginComponent,
-    FormularioComponent
+    FormularioComponent,
+    PostComponent
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    FormsModule
   ],
   exports: [
     HomeComponent,
     LoginComponent,
-    FormularioComponent
+    FormularioComponent,
+    PostComponent
   ]
 })
 export class PagesModule { }
